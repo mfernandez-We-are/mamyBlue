@@ -1,0 +1,19 @@
+.user-content .page-content {
+    p, li {
+        font-size: var(--font-small);
+    }
+    
+    @media (min-width: 768px) {
+        p, li {
+            font-size: var(--font-base);
+        }
+    }
+
+    .size-guide-page-img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+

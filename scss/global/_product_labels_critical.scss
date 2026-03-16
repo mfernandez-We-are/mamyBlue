@@ -1,0 +1,91 @@
+/* / Labels */
+.labels {
+	display: flex;
+	position: absolute;
+	right: 0px;
+    top: 5px;
+	z-index: 9;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.label-images {
+  position: absolute;
+  top: 10px !important;
+  left: 10px;
+  z-index: 9;
+  text-align: right;
+  pointer-events: none;
+}
+
+.label-images-product {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9;
+  text-align: right;
+  pointer-events: none;
+}
+
+.label-custom-image, .label-custom-image-product {
+    padding: 0 !important;
+    height: 40px;
+    width: 40px !important;
+    background: transparent !important;
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.label {
+	width: fit-content;
+	margin-bottom: 10px;
+	padding: 5px 15px;
+	font-size: 7.5px;
+	text-align: left;
+}
+
+.standalone-product-discount-label {
+	font-size: 4px;
+	color: red;
+	font-weight: 600;
+}
+
+.js-free-shipping-minimum-label {
+	font-weight: 600;
+	padding: 5px 8px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
+
+
+/* // Min width 768px */
+@media (min-width: 768px) {
+	.label {
+		font-size: var(--font-small);
+	}
+
+	.standalone-product-discount-label {
+		font-size: .8125rem;
+	}
+
+	#single-product .js-free-shipping-minimum-label {
+		font-size: var(--font-base);
+		width: 4.375rem;
+	}
+
+	.label-images-product {
+		left: 50px !important;
+	}
+
+	.label-custom-image, .label-custom-image-product {
+		width: 60px !important;
+		height: 60px;
+		padding: 0;
+	}
+
+}

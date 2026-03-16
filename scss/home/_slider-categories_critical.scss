@@ -1,0 +1,218 @@
+.section-categories-home {
+	.js-swiper-categories .swiper-slide {
+		opacity: .25;
+		transform: scale(.95);
+		transition: opacity .25s ease, transform .25s ease;
+	}
+
+	.js-swiper-categories .swiper-slide-prev,
+	.js-swiper-categories .swiper-slide-next {
+		opacity: .5;
+		transform: scale(.97);
+	}
+
+	.js-swiper-categories .swiper-slide-active {
+		opacity: 1;
+		transform: scale(1);
+		z-index: 2;
+	}
+
+	.js-swiper-categories-pagination {
+		margin-top: 12px;
+		text-align: center;
+	}
+
+	.swiper-pagination-bullet {
+		width: 6px;
+		height: 6px;
+		background: #c4c4c4;
+		margin: 0 3px !important;
+		opacity: 1;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #000;
+	}
+
+	.home-categories-title {
+		font-size: 16px;
+		font-weight: 600;
+		font-family: var(--heading-font);
+		text-transform: uppercase !important;
+	}
+
+	.home-categories-subtitle {
+		font-size: 12px;
+		font-family: var(--body-font);
+		color: #606060;
+		font-weight: 400;
+	}
+
+	/* ===== CARD CONTENEDORA ===== */
+	.home-category-card {
+		position: relative;
+		overflow: hidden;
+		border-radius: 6px;
+		border: 1px solid #e0e0e0;
+		background-color: #000; /* para transiciones sobre imagen oscura */
+		margin: 5px auto 40px;
+		width: 100%;
+		max-width: 741px;
+	}
+
+	/* ===== INTERIOR: definimos tamaño y ratio ===== */
+	.home-category-card-inner {
+		position: relative;
+		width: 100%;
+		max-width: 741px;
+		max-height: 549px;
+		aspect-ratio: 247 / 183; /* ~741 x 549 */
+		overflow: hidden;
+	}
+
+	/* ===== IMAGEN ===== */
+	.home-category-card-image {
+		position: absolute;
+		inset: 0;
+	}
+
+	.home-category-card-image img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover; /* si querés que no recorte, podés volver a 'contain' */
+	}
+
+	/* ===== FRENTE: imagen + título + botón ===== */
+	.home-category-card-front {
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 1.5rem;
+		color: #fff;
+	}
+
+	.home-category-card-title {
+		font-size: 16px;
+		font-weight: 700;
+		font-family: var(--heading-font);
+		text-transform: uppercase;
+		color: #fff;
+		margin-bottom: 12px;
+	}
+
+	.home-category-card-btn {
+		display: inline-block;
+		padding: 8px 18px;
+		font-size: 13px;
+		font-weight: 400;
+		font-family: var(--heading-font);
+		background-color: #fff;   
+		color: #000;              
+		border-radius: 5px;       
+		border: none;
+		letter-spacing: normal !important;
+		text-transform: none !important;
+	}
+
+	.home-category-card-btn:hover {
+		color: #333333 !important;
+	}
+
+	.home-category-card-overlay {
+		position: absolute;
+		inset: 0;
+		background: #333333; 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 2rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.25s ease, visibility 0.25s ease;
+		color: #ffffff;
+	}
+
+	.home-category-card-description {
+		margin-bottom: 1rem;
+		font-size: 12px; 
+		line-height: 1.4;
+		font-family: var(--body-font);
+	}
+
+	/* HOVER: mostramos dorso y ocultamos frente */
+	.home-category-card.has-description:hover .home-category-card-overlay {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.home-category-card.has-description:hover .home-category-card-front {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	/* ===== NAVEGACIÓN SWIPER ===== */
+	.swiper-button-prev {
+		left: 5% !important;
+	}
+	.swiper-button-next {
+		right: 5% !important;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+		line-height: 30px;
+		aspect-ratio: 1 / 1;
+		margin-top: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media (min-width: 768px) {
+		.home-categories-title {
+			font-size: 28px;
+			font-weight: 600;
+			font-family: var(--heading-font);
+			text-transform: uppercase;
+		}
+		.home-categories-subtitle {
+			font-size: 20px;
+			font-family: var(--body-font);
+			color: #606060;
+			font-weight: 300;
+		}
+		.home-category-card-title {
+			font-size: 24px;
+		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: flex !important;
+		}
+		.swiper-button-prev {
+			left: 27% !important;
+		}
+		.swiper-button-next {
+			right: 27% !important;
+		}
+		.home-category-card-description {
+		
+		font-size: 20px; 
+		
+		}
+		.home-category-card-title {
+		font-size: 26px;
+		margin-bottom: 12px !important;
+		
+	}
+	}
+}

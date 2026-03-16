@@ -1,0 +1,38 @@
+/*============================================================================
+  #Cart detail
+=================================================================*/
+
+/* // Shipping Calculator */
+.shipping-calculator-form input{
+	font-size: 12px !important;
+}
+.shipping-calculator-form button{
+	font-size: 12px !important;
+}
+.free-shipping-title {
+	position: relative;
+	width: 100%;
+	height: 55px;
+}
+
+.shipping-calculator-head {
+	&.with-zip {
+		height: 65px;
+
+		&.with-free-shipping {
+			height: 110px;
+		}
+	}
+
+	&.with-form {
+		height: 110px;
+
+		+ .shipping-spinner-container {
+			margin-top: -20px;
+		}
+	}
+
+	&.with-error {
+		height: 155px;
+	}
+}

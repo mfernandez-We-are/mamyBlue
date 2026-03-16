@@ -1,0 +1,41 @@
+.product-image-container .product-thumbs {
+	.swiper-container {
+		height: 320px;
+	}
+
+	.swiper-button-prev {
+		position: absolute;
+		display: block;
+		top: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.swiper-button-next {
+		position: absolute;
+		display: block;
+		bottom: -25px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	a.product-thumb {
+		height: 100%;
+	}
+
+	img {
+		display: block;
+		margin: auto;
+		height: auto;
+		//width: auto;
+		//max-height: 100%;
+		max-width: 100%;
+		position: relative;
+	}
+
+	@media (min-width: 768px) {
+		.swiper-container {
+			height: 460px;
+		}
+	}
+}

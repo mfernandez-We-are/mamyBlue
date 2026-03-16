@@ -1,0 +1,44 @@
+.section-banner-home {
+    background-color: #f4f4f4;
+    
+    .btn {
+        font-weight: 600;
+        letter-spacing: normal;
+        font-size: .375rem;
+        border-radius:  8px;
+        padding: 12px 20px;
+    }
+    
+    .textbanner-title {
+        font-size: var(--font-big);
+        line-height: 150%;
+        margin-bottom: .9375rem;
+    }
+    
+    .textbanner-paragraph {
+        font-size: .4688rem;
+        line-height: 150%;
+        margin-bottom: .9375rem;
+        font-weight: 500;
+    }
+    
+    img {
+        border-radius: 20px;
+    }
+    
+    @media (min-width: 768px) {
+        .textbanner-title {
+            font-size: 1.875rem;
+        }
+        
+        .textbanner-paragraph {
+            font-size: var(--font-big);
+            line-height: 1.75rem;
+            margin-bottom: 3.125rem;
+        }
+        
+        .btn {
+            font-size: var(--font-big);
+        }
+    }
+}  

@@ -1,0 +1,563 @@
+/* ==========================================================================
+   GRID ITEM (CARD)
+   ========================================================================== */
+
+.item {
+  background-color: #fff;
+  // box-shadow: 0 2px 4px -2px #0000001A;
+  margin: 5px auto 50px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  position: relative;
+  overflow: hidden;
+  max-height: 600px;
+  border-radius: 16px;
+  
+  .item-image-secondary {
+		opacity: 0;
+	}
+
+	&.item-with-two-images:hover .item-image-primary {
+		opacity: 0;
+		transition-delay: .05s
+	}
+
+	&.item-with-two-images:hover .item-image-secondary{
+		opacity: 1;
+	}
+
+}
+
+.item-thumbnail {
+  display: block;
+  width: 100%;
+}
+
+/* ==========================================================================
+   TEXTO / META DEL ITEM
+   ========================================================================== */
+
+.item-brand {
+  font-weight: 600;
+  font-size: 6px;
+  line-height: 12px;
+}
+
+.item-name {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.9375rem;
+	text-transform: capitalize;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	min-height: calc(0.9375rem * 2);
+	-webkit-box-orient: vertical;
+  font-family: var(--heading-font);
+  text-align: center;
+
+}
+
+.item-sku {
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 10px;
+}
+
+.item-price-container {
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+  font-size: 12px;
+  line-height: 0.9375rem;
+  font-family: var(--body-font);
+  text-align: center;
+
+  .price-compare {
+    font-size: 8px;
+  }
+}
+
+.item-installments {
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 10px;
+  color: var(--installment-color);
+
+  &.installment-cash {
+    color: var(--text-accent);
+  }
+}
+
+.installment-text{
+	font-size: 9px !important;
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 500 !important;
+}
+
+/* ==========================================================================
+   VARIANTE REDUCIDA
+   ========================================================================== */
+
+.item-product-reduced {
+  .item-image {
+    height: 145px;
+
+    img {
+      width: 100%;
+      height: 145px;
+      object-fit: cover;
+    }
+  }
+}
+
+/* ==========================================================================
+   COLORES (BULLETS)
+   ========================================================================== */
+
+/* Contenedor de colores (línea general) */
+.item-colors {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+/* Bullets de color – tamaño fijo */
+.item-colors-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.item-colors-bullet.selected {
+  // aparece el borde
+  box-shadow: inset 0 0 0 1px #000; // anillo interno extra (opcional)
+  opacity: 1;
+}
+
+/* Versión con Swiper: colores + chevron a la derecha */
+.item-colors--swiper {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Swiper de colores: SOLO deja ver 2 bullets */
+.item-colors--swiper .js-swiper-colors {
+  width: 45px;         /* ~2 circulitos */
+  max-width: 45px;
+  overflow: hidden;   // solo oculto horizontal
+}
+
+@media (min-width: 768px) {
+  .item-colors-bullet {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+  .item-colors--swiper .js-swiper-colors { 	
+    width: 55px;       /* un toque más grande en desktop */
+    max-width: 55px;
+  }
+
+  .installment-text{
+		font-size:11px !important;
+		font-family: 'Inter', sans-serif !important;
+		font-weight: 500 !important;
+	}
+}
+
+.item-colors--swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.item-colors--swiper .swiper-slide {
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Flecha “>” */
+.item-colors-nav {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+	
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.item-colors-nav-prev {
+  margin-right: 2px;
+}
+
+.item-colors-nav-next {
+  margin-left: 2px;
+}
+
+/* Ocultar flechas deshabilitadas (inicio/fin) */
+.item-colors-nav.swiper-button-disabled {
+  display: none;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   BOTONES GENERALES (BASE)
+   ========================================================================== */
+
+.btn-transition-success {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+/* Base comunes para botones principales */
+.btn-quick-shop,
+.btn-shop {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 8px;
+  padding: 4px 0;
+  border-radius: 2px;
+}
+
+.btn-shop-2{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 10px;
+    padding: 8px 20px !important;
+    border-radius: 6px !important;
+    background-color: #000 !important;
+    color: #fff;
+  }
+
+.btn-shop-2{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 10px;
+    padding: 8px 20px !important;
+    border-radius: 6px !important;
+    background-color: #000 !important;
+    color: #fff;
+  }
+.btn-shop-2:hover{
+    opacity: 0.8;
+    background-color: #000 !important;
+    color: #fff;
+  }
+
+.btn-shop-2:focus{
+    opacity: 0.8;
+    background-color: #000 !important;
+    color: #fff;
+  }
+/* ==========================================================================
+   BOTÓN QUICKSHOP (CARD)
+   ========================================================================== */
+
+.btn-quick-shop {
+  background: #fff !important;
+   box-shadow: inset 0 0 0 1px #000;
+  color: #272727;
+
+  .icon-quick-shop {
+    font-size: 1.5em !important;
+    fill: #272727;
+  }
+
+
+
+  &.is-active {
+    background: #272727 !important;
+    color: #fff;
+
+    .icon-quick-shop {
+      fill: #fff;
+    }
+  }
+}
+
+/* ==========================================================================
+   BOTÓN NORMAL (SIN QUICKSHOP)
+   ========================================================================== */
+
+.btn-shop {
+  background: #272727 !important;
+  color: #fff;
+  fill: #fff;
+}
+
+/* ==========================================================================
+   ICONO CIERRE QUICKSHOP
+   ========================================================================== */
+
+.icon-close-quick {
+  fill: #fff;
+  color: #fff;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   QUICKSHOP CUSTOM (MODAL PEGADO A LA CARD)
+   ========================================================================== */
+
+.custom-quickshop-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-modal {
+    z-index: 10;
+    text-align: center;
+    flex-direction: column;
+    color: var(--main-background);
+    background-color: #0000004d;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column; /* mobile-first: talles arriba, botón abajo */
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 ;
+  }
+
+  .talles {
+    background-color: var(--main-background);
+    width: 100%;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 10px;
+
+    &:hover {
+      border: 0.25px solid #f2f2f2;
+    }
+  }
+
+  .btn-talle {
+    background-color: #fff;
+    border-radius: 3px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    padding: 2px 4px;
+    font-size: 10px;
+    position: relative; /* necesario para el ::after en disabled */
+
+    &.selected {
+      background-color: #C21F3C;
+      color: #fff;
+
+      input {
+        color: #000;
+      }
+    }
+
+    &.disabled {
+      text-decoration: line-through;
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .custom-quickshop-2-submit {
+    font-family: var(--heading-font);
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    font-size: 10px;
+    width: 50%;
+
+    &.disable {
+      opacity: 0.5 !important;
+    }
+  }
+
+  .modal-body {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Header interno de la modal (botón cerrar) */
+.modal-header-quickshop {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* ==========================================================================
+   LAYOUT / BACKGROUND DE TALLES (OVERLAY DEL GRID)
+   ========================================================================== */
+
+.talles {
+  z-index: 999;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.5); /* fondo semi-transparente */
+}
+
+/* ==========================================================================
+   RESPONSIVE ≥ 768px
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  /* -------- Card -------- */
+  .item {
+    max-width: 320px;
+  }
+
+   .btn-quick-shop {
+    padding: 4px 0;
+   }
+  /* Variante reducida */
+  .item-product-reduced {
+    .item-image {
+      height: 180px;
+
+      img {
+        height: 180px;
+      }
+    }
+  }
+
+  /* Tipografía desktop */
+  .item-brand {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 24px;
+  }
+
+  .item-name {
+    font-weight: 700;
+    font-size: 16px;
+		
+  }
+
+  .item-sku {
+    font-size: var(--font-small);
+  }
+
+  .item-price-container {
+    line-height: 1.75rem;
+    font-size: 14px;
+    font-weight: 400;
+
+    .price-compare {
+      font-size: 16px;
+    }
+  }
+
+  .item-installments {
+    font-size: var(--font-smallest);
+    line-height: 1rem;
+  }
+
+  /* Botón normal desktop */
+  .btn-shop {
+    font-weight: 700;
+    font-size: 10px;
+    padding: 4px 0;
+  }
+
+  .btn-shop-2{
+    font-weight: 500;
+    font-size: 10px;
+    padding: 8px 20px !important;
+  }
+
+  /* Quickshop layout desktop: talles izquierda, botón derecha */
+  .custom-quickshop-2 {
+    &-row {
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .custom-quickshop-2-submit {
+      width: auto;
+      padding: 3px;
+      
+    }
+	&-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px 4px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 8px;
+  }
+  }
+  .btn-talle {
+    
+    padding: 2px 2px !important;
+    }
+}
+
+@media (min-width: 1350px){
+  /* Botón quickshop desktop */
+  .btn-quick-shop {
+    font-weight: 700;
+    font-size: 10px;
+    padding: 4px !important;
+
+    .icon-quick-shop {
+    
+	  font-size: 2em !important;
+    }
+
+  }
+
+  .btn-shop {
+    font-weight: 700;
+    font-size: 10px;
+    padding: 8px 0;
+  }
+
+}

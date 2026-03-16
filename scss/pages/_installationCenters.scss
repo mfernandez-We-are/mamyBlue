@@ -1,0 +1,241 @@
+#map {
+    height: 900px;
+    width: 100%; 
+    float: none;
+}
+  
+#local-info {
+    width: 100%;
+    float: none;
+    overflow-y: auto;
+    max-height: 1200px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 700;
+    font-style: Bold;
+}
+
+.accordiong-title {
+    font-size: 17px;
+    font-weight: 700;
+    font-style: Bold;
+
+}
+
+.branch-info-title {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.branch-info-subtitle {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    padding-bottom: 10px;
+
+}
+
+.branch {
+    margin-bottom: 20px;
+    padding: 10px 10px 0px 10px;
+    transition: background-color 0.5s;
+}
+
+.btn-branch {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #043163;
+    align-items: center;
+    color: white;
+    border: 1px solid var(--main-foreground);
+    border-radius: 10px;
+    font-weight: 700;
+    font-style: Bold;
+    padding: 5px;
+    font-size: 11px;
+    width: 200px;
+}
+
+
+.btn-branch.highlighted:hover,
+.btn-branch.highlighted:focus {
+    background-color: #043163;
+    color: white;
+}
+
+.btn-branch.highlighted {
+    background-color: #043163;
+    color: white;
+}
+
+.branch-info {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*Icono de wsp*/
+.pop-wa {
+    font-size: 22px;
+    color: #043163;
+}
+
+/* */
+.leaflet-popup-content-wrapper {
+    border-radius: 20px;
+}
+
+.leaflet-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*LÍNEAS DEL ACCORDION */
+.branch-toggle,
+#local-info .js-accordion-content {
+    border-top: 1px solid var(--main-foreground);
+}
+
+
+#local-info .js-accordion-container:last-child {
+
+    .branch-toggle,
+    .js-accordion-content {
+        border-bottom: 1px solid var(--main-foreground);
+    }
+
+
+}
+
+.chevron-locales {
+    position: absolute;
+    z-index: 2;
+    right: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s;
+}
+
+.select-items {
+    display: none;
+    top: 100%;
+    width: 100%;
+    border: 1px solid var(--accent-color);
+    border-radius: 0 0 10px 10px;
+    z-index: 3;
+    background-color: var(--main-background);
+    max-height: 21.875rem;
+    overflow: auto;
+}
+
+.select-selected {
+    padding: 15px 10px;
+    border: 1px solid var(--button-background);
+    border-radius: 10px;
+}
+
+.select-selected.select-arrow-active {
+    border-radius: 10px 10px 0 0;
+}
+
+.select-selected.select-arrow-active~.select-items {
+    display: block;
+}
+
+.select-arrow-active .chevron-locales {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.select-items>div:not(:last-child) {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.select-items>div:hover {
+    background-color: var(--main-foreground);
+    color: var(--main-background);
+}
+
+/* Media Queries for Responsive Design */
+
+
+@media(max-width: 900px) {
+
+    .branch-info {
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .branch-info-title {
+        padding: 1px 20px 10px 0;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 10px;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .accordiong-title {
+        font-size: 15px;
+    }
+
+    .branch-info-subtitle {
+        font-family: Poppins;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 13px;
+        padding-bottom: 10px;
+
+
+    }
+
+}
+
+@media(min-width: 768px) {
+    #map {
+        width: 50%;
+        float: left;
+    }
+
+    #local-info {
+        width: 48%;
+        float: right;
+
+
+    }
+}
+
+@media(max-width: 767px) {
+
+    #map,
+    #local-info {
+        width: 100%;
+        float: none;
+        padding-inline: 40px;
+        padding-left: 0;
+        padding-inline: 0;
+        max-height: 60vh;
+        display: flex;
+        text-align: justify;
+        z-index: 50
+    }
+}

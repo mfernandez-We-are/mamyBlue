@@ -1,0 +1,359 @@
+  .about-page {
+      font-size: var(--font-big);
+      padding: 40px 50px 80px 40px;
+      font-weight: 400;
+  }
+
+
+  /*  IMG    */
+  .container-img-sn {
+      align-items: center;
+      display: flex;
+      justify-content: center
+  }
+
+  .container-img-sn img {
+      display: block;
+      height: auto;
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      padding-bottom: 40px;
+  }
+
+  /* ---------- CARDS ---------*/
+
+
+  .card-sn {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow:
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow .2s ease;
+      justify-items: stretch;
+      padding: 16px;
+      height: 130px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 12px;
+  }
+
+
+  .titulo-card-sn img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex: 0 0 auto;
+  }
+
+  .titulo-card-sn h2 {
+      font-size: var(--font-big);
+      line-height: 1.2;
+      margin: 0;
+      color: #111827;
+      font-weight: 700;
+  }
+
+  .subt-card-sn {
+      font-size: var(--font-base);
+      line-height: 1.5;
+      color: #374151;
+  }
+
+  .subt-card-sn>div {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #6b7280;
+      font-size: var(--font-small);
+  }
+
+  .subt-card-sn img {
+      max-height: 18px;
+      width: auto;
+  }
+
+  .titulo-card-sn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  }
+
+  /* Swiper bullets  */
+  .sn-swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      opacity: .4;
+  }
+
+  .sn-swiper .swiper-pagination-bullet-active {
+      opacity: 1;
+  }
+
+  /*-----FIN CARDS ------*/
+
+
+
+  /*--------- SECCION ELEGIRNOS---------  */
+
+  .title-sn {
+      padding: 12px 8px;
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+  }
+
+  .sec-choose {
+      align-items: start;
+      display: grid;
+      font-weight: 400;
+      gap: 16px;
+      grid-auto-rows: auto;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      justify-items: center;
+      padding-block: 46px
+  }
+
+  .sec-choose .title-e-sn {
+      padding: 12px 8px;
+      width: 100%
+  }
+
+  .sec-choose .title-e-sn {
+      letter-spacing: .04em;
+      text-align: center;
+  }
+
+
+
+  .sec-choose .container-choose {
+      display: contents;
+  }
+
+  .sec-choose img {
+      display: block;
+      height: auto;
+      margin-inline: auto;
+      max-width: 79px;
+  }
+
+  .sec-choose>div:nth-child(2)>div {
+      font-weight: 600;
+      text-align: center;
+      font-size: 20px;
+
+  }
+
+  .sec-choose>div:nth-child(3)>div {
+      font-size: var(--font-big);
+      font-weight: 400;
+      line-height: 1.4;
+      text-align: center;
+      width: 300px;
+  }
+
+  /*---------FIN SEC ELEGIRNOS ---------*/
+
+
+  /*------- ICONOS ---------*/
+
+  .container-sn {
+      flex-direction: column;
+      padding-block: 39px;
+  }
+
+  .container-sn,
+  .stats-row {
+      align-items: center;
+      display: flex;
+      text-align: center;
+  }
+
+  .stats-row {
+      font-size: 24px;
+      font-weight: 800;
+      gap: 1px;
+      justify-content: center;
+      padding-top: 13px;
+  }
+
+  .stats-text {
+      font-size: 20px;
+      font-weight: 700;
+  }
+
+  .c-cyan {
+      color: #41dadc
+  }
+
+  .c-navy {
+      color: #17324f
+  }
+
+  .c-red {
+      color: #e00000
+  }
+
+  .c-orange {
+      color: #f26419
+  }
+
+  .c-yellow {
+      color: #f6ae2d
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after  {
+      color: #000!important;
+      font-size: 18px!important;
+  }
+
+
+  /*----- FIN ICONOS COLORES-------*/
+
+  /*-------SEC TRABAJA CON NOSOTROS -------*/
+
+  .section-work {
+      background: linear-gradient(88.95deg, #333, #043163 43.13%, #333 98.59%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 36px 20px 30px;
+      text-align: center;
+
+       .btn {
+      background: #e5e7eb;
+      border: 1px solid var(--accent-color);
+      border-radius: 8px;
+      color: #cc2139;
+      cursor: pointer;
+      font-weight: 700;
+      padding: 10px 18px;
+  }
+  }
+
+  .section-work h1 {
+      font-size: clamp(18px, 3.4vw, 28px);
+      font-weight: 900;
+      letter-spacing: .04em;
+      margin: 0 0 8px
+  }
+
+ 
+
+
+  /*------LINEAS --------*/
+  .line-sn {
+      background: #2a5b89;
+  }
+
+  .line-sn,
+  .linear-sn {
+      border: 0;
+      height: 2px;
+      margin: 0 auto 16px;
+      width: 95%;
+  }
+
+  .linear-sn {
+      background: #cc2139;
+  }
+
+
+
+
+  @media (max-width: 990px) {
+
+      .container-sn {
+          padding-block: 45px
+      }
+
+      .container-sn img {
+          height: auto;
+          width: 100px
+      }
+
+
+      /* POR QUE ELEGIRNOS */
+
+      .title-sn {
+          font-weight: 600;
+           padding: 1px;
+          text-align: center;
+          width: 100%;
+          font-size: 20px;
+      }
+
+      .sec-choose {
+          padding-inline: 9px;
+          align-items: stretch;
+          display: grid;
+          font-weight: 400;
+          gap: 4px;
+          grid-auto-rows: auto;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          justify-items: center;
+          padding-block: 16px;
+      }
+
+
+      .sec-choose img {
+          display: block;
+          height: auto;
+          margin-inline: auto;
+          max-width: 48px;
+      }
+
+      .sec-choose>div:nth-child(2)>div {
+          font-size: 8px;
+          line-height: 1.4;
+          text-align: center;
+      }
+
+      .sec-choose>div:nth-child(3)>div {
+          font-size: 7px;
+          line-height: 1.4;
+          text-align: center;
+          width: 100%;
+      }
+
+      .sec-choose img {
+          display: block;
+          height: auto;
+          margin-inline: auto;
+          max-width: 37px;
+      }
+  }
+
+  @media (max-width: 750px) {
+      .container-sn {
+          padding-block: 45px;
+      }
+
+      .container-sn img {
+          height: auto;
+          width: 84px;
+      }
+
+      /* ICONOS DE COLORES */
+
+       .stats-row {
+          font-size: 22px;
+      }
+
+      .stats-text {
+          font-size: var(--font-small);
+      }
+  }
+
+  @media(max-width:520px){
+    
+      .title-sn {
+          padding: 1px;
+          font-size: 15px;
+      }
+  }

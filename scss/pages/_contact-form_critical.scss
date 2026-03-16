@@ -1,0 +1,48 @@
+#contact-form {
+	border: 1px solid var(--main-foreground);
+	padding: 1rem;
+    
+	.form {
+		&-label,
+		&-group {
+			margin-bottom: 0.625rem;
+		}
+
+		&-label,
+		&-control,
+		&-submit {
+			font-size: 8px;
+		}
+
+		&-group {
+			margin-bottom: 1rem;
+		}
+
+		&-label {
+			margin-bottom: 1rem;
+		}
+
+		&-control {
+			border: 1px solid var(--main-foreground);
+		}
+
+		&-submit {
+			border-radius: 8px;
+			letter-spacing: normal;
+		}
+	}
+
+	.g-recaptcha > div {
+		margin: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	#contact-form {
+		.form {
+			&-label, &-control, &-submit {
+				font-size: var(--h4);
+			}
+		}
+	}
+}

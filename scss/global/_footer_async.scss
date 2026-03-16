@@ -1,0 +1,141 @@
+/*============================================================================ #Footer ==============================================================================*/
+
+footer {
+  background-color: var(--main-foreground);
+  color: var(--main-background);
+  margin-top: 40px;
+  padding: 30px 0;
+
+  a, .contact-link {
+    color: #eaeaea;
+
+    &:hover, &:focus {
+      color: rgba($color: var(--main-background), $alpha: 0.8);
+    }
+  }
+}
+
+/* / Nav */
+
+.footer-column-title {
+  font-weight: 800;
+  font-size: var(--font-base);
+  line-height: 28px;
+}
+
+.footer-store-info-title {
+  font-size: 16px;
+	font-weight: 600;
+	font-family: var(--heading-font);
+}
+.footer-info-text{
+  font-size: 12px;
+	font-family: var(--body-font);
+	color: #606060;
+	font-weight: 400;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  .footer-menu-item {
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
+
+.footer-payments-shipping-logos img {
+  width: auto;
+  max-height: 35px;
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+}
+
+.powered-by-text {
+  display: inline-block;
+}
+
+.powered-by-logo {
+  display: inline-block;
+  width: 160px;
+
+  svg {
+    fill: var(--main-background) !important;
+  }
+}
+
+.footer-logo {
+  &.afip img {
+    width: 3.125rem;
+  }
+  img {
+    max-width: 100px;
+    margin: 2px;
+    padding: 5px; 
+  }
+}
+
+/* // Data contact */
+.footer-additional-label{
+  font-weight: 700 !important;
+  font-family: var(--body-font) !important;
+}
+
+.footer-additional-text{
+  font-size: 10px;
+}
+.contact-info {
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.contact-icon {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.contact-item,
+.contact-link {
+	list-style: none;
+}
+
+/* // Min width 768px */
+@media (min-width: 768px) {
+  /* // Footer */
+  .contenedor-footer-info{
+    width: 80%;
+  }
+  .footer-store-info-title {
+    font-size: 28px;
+				font-weight: 500;
+				font-family: var(--heading-font);
+  }
+  .footer-info-text{
+    font-size: 20px;
+		font-family: var(--body-font);
+		color: #606060;
+		font-weight: 300;
+    width: 80%;
+
+  }
+  .footer-additional-text{
+  font-size: 12px;
+}
+
+  .footer-menu-item, .contact-item, .footer-info-text {
+    font-size: var(--font-big);
+    line-height: 24px;
+  }
+
+  .footer-menu {
+    list-style: none;
+
+    .footer-menu-item {
+      display: inline-block;
+      padding: 0 15px;
+    }
+  }
+}

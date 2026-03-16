@@ -1,0 +1,12 @@
+/*============================================================================
+  #global Styles - Critical CSS
+  ==============================================================================*/
+
+@use "./global/_helpers_critical";
+@use "./global/_external-libs_critical";
+@use "./global/_components_critical";
+@use "./global/_header_critical";
+@use "./global/_banners_critical";
+@use "./global/_cart_critical";
+@use "./global/_product-item_critical";
+@use "./global/_product_labels_critical";

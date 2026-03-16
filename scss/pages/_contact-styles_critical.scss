@@ -1,0 +1,76 @@
+/* / Data contact */
+
+.contact-info {
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.contact-icon {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.contact-item,
+.contact-link {
+	list-style: none;
+}
+
+.contact-page {
+
+	@media (max-width: 767px){
+		.contact-info-title {
+			font-size: var(--font-small);	
+		}
+
+		.contact-item {
+			font-size: 8px !important;
+		}
+
+		#contact-form {
+
+			.form {
+				&-label, &-group {
+					margin-bottom: .625rem !important;
+				}
+
+				&-label, &-control, &-submit {
+					font-size: 8px !important;
+				}
+
+			}
+		}
+
+	}
+
+	#contact-form {
+		border: 1px solid var(--main-foreground);
+		padding: 1rem;
+		
+		.form {
+			&-group {
+				margin-bottom: 1rem;
+			}
+			
+			&-label {
+				margin-bottom: 1rem;
+				font-size: var(--h4);
+			}
+			
+			&-control {
+				border: 1px solid var(--main-foreground);
+			}
+			
+			&-submit {
+				border-radius: 8px;
+				font-size: var(--h4);
+				letter-spacing: normal;
+			}
+		}
+	
+		.g-recaptcha > div {
+			margin: auto;
+		}
+	
+	}
+}
+

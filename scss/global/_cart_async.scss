@@ -1,0 +1,136 @@
+/*============================================================================
+  #Cart detail
+======================================================================*/
+/* Table */
+
+.cart-table-row {
+  padding: 10px 0;
+}
+
+.cart-item {
+  position: relative;
+}
+
+.cart-item-name {
+  float: left;
+  width: 100%;
+  padding: 0 40px 10px 0;
+}
+
+.cart-item-subtotal {
+  float: right;
+  margin: 10px 0;
+  text-align: right;
+  font-weight: normal;
+}
+
+.cart-item-btn {
+  padding: 6px;
+  display: inline-block;
+  background: transparent;
+  font-size: 16px;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.cart-item-input {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.cart-item .fa-cog {
+  display: none;
+}
+
+.cart-item-spinner {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+
+.cart-item-delete {
+  position: absolute;
+  right: 0;
+
+  .btn {
+    padding-right: 0;
+  }
+}
+
+.cart-quantity-input-container svg {
+  padding: 6px 14px;
+}
+
+.cart-unit-price {
+  float: left;
+  width: 100%;
+  margin: 5px 0 2px 0;
+}
+
+.cart-promotion-detail {
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+
+.cart-promotion-number {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* // Totals */
+
+.cart-subtotal {
+  float: right;
+  clear: both;
+  margin: 0 0 10px 0;
+}
+
+.total-promotions-row {
+  float: right;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+
+  .cart-promotion-number {
+    margin-left: 5px;
+  }
+}
+
+.cart-total {
+  clear: both;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Totals */
+
+.cart-promotion-detail {
+  width: 65%;
+  float: left;
+}
+
+.cart-promotion-number {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  float: right;
+  margin: 0;
+  text-align: right;
+}

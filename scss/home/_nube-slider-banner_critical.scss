@@ -1,0 +1,18 @@
+.nube-slider-home {
+    .swiper-button{
+        &-prev, &-next {
+            background: #ababab26;
+            border-radius: 50%;
+            width: 40px;
+            aspect-ratio: 1 / 1;
+        }
+
+        &-prev {
+            left: 10px;
+        }
+
+        &-next {
+            right: 10px;
+        }
+    }
+}  
