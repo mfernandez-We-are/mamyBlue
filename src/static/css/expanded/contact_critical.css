@@ -1,0 +1,90 @@
+/*============================================================================
+  #Contact page
+==============================================================================*/
+/* / Data contact */
+.contact-info {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.contact-icon {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.contact-item,
+.contact-link {
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .contact-page .contact-info-title {
+    font-size: var(--font-small);
+  }
+  .contact-page .contact-item {
+    font-size: 8px !important;
+  }
+  .contact-page #contact-form .form-label, .contact-page #contact-form .form-group {
+    margin-bottom: 0.625rem !important;
+  }
+  .contact-page #contact-form .form-label, .contact-page #contact-form .form-control, .contact-page #contact-form .form-submit {
+    font-size: 8px !important;
+  }
+}
+.contact-page #contact-form {
+  border: 1px solid var(--main-foreground);
+  padding: 1rem;
+}
+.contact-page #contact-form .form-group {
+  margin-bottom: 1rem;
+}
+.contact-page #contact-form .form-label {
+  margin-bottom: 1rem;
+  font-size: var(--h4);
+}
+.contact-page #contact-form .form-control {
+  border: 1px solid var(--main-foreground);
+}
+.contact-page #contact-form .form-submit {
+  border-radius: 8px;
+  font-size: var(--h4);
+  letter-spacing: normal;
+}
+.contact-page #contact-form .g-recaptcha > div {
+  margin: auto;
+}
+
+#contact-form {
+  border: 1px solid var(--main-foreground);
+  padding: 1rem;
+}
+#contact-form .form-label, #contact-form .form-group {
+  margin-bottom: 0.625rem;
+}
+#contact-form .form-label, #contact-form .form-control, #contact-form .form-submit {
+  font-size: 8px;
+}
+#contact-form .form-group {
+  margin-bottom: 1rem;
+}
+#contact-form .form-label {
+  margin-bottom: 1rem;
+}
+#contact-form .form-control {
+  border: 1px solid var(--main-foreground);
+}
+#contact-form .form-submit {
+  border-radius: 8px;
+  letter-spacing: normal;
+}
+#contact-form .g-recaptcha > div {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  #contact-form .form-label, #contact-form .form-control, #contact-form .form-submit {
+    font-size: var(--h4);
+  }
+}
+
+/*# sourceMappingURL=contact_critical.css.map */

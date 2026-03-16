@@ -1,0 +1,1526 @@
+Colores de tu marca
+	meta
+		icon = paint-brush
+		advanced = false
+	color
+		name = primary_color
+		description = Color principal
+	subtitle
+		subtitle = <div class='js-color-description'>Aplica a los botones.</div>
+	color
+		name = accent_color
+		description = Color de acento
+	subtitle
+		subtitle = <div class='js-color-description'>Aplica a promociones y a mensajes de descuento, envío gratis y cuotas sin interés.</div>
+	title
+		title = Colores de contraste
+	color
+		name = background_color
+		description = Color de fondo
+	color
+		name = text_color
+		description = Color de textos
+	description
+		description = Para facilitar la lectura, asegurate de que los colores contrasten entre sí.
+	title
+		title = Combinaciones predeterminadas
+	description
+		description = Ideales para restablecer los colores por defecto del diseño.
+	palettes
+		palettes
+			palette_1
+				primary_color = #000000
+				background_color = #FFFFFF
+				text_color = #000000
+				accent_color = #808E25
+			palette_2
+				primary_color = #F29466
+				background_color = #F9F9F9
+				text_color = #CC8563
+				accent_color = #F29466
+			palette_3
+				primary_color = #86C2B4
+				background_color = #FFF9EE
+				text_color = #0F5672
+				accent_color = #86C2B4
+	subtitle
+		subtitle = <a target='_blank' href='https://ayuda.tiendanube.com/es_ES/124497-colores-de-tu-marca/como-cambiar-los-colores-de-mi-diseno/?utm_source=admin-desktop&utm_medium=feature-page&utm_campaign=help'>¿Cómo cambio los colores de mi diseño?</a>
+		
+Tipo de letra
+	meta
+		icon = font
+		advanced = false
+	font
+		name = font_headings
+		description = Títulos de páginas y banners
+		values
+			"Oswald", Sans-serif = Oswald
+			"Inter", Sans-serif = Inter
+			"Poppins", Sans-serif = Poppins
+			"Roboto", Sans-serif = Roboto
+			"Muli", sans-serif = Muli
+			"Playfair Display", Helvetica, Arial, sans-serif = Playfair
+			"Libre Baskerville", serif = Libre Baskerville
+			"Open Sans",sans-serif = Open Sans
+			"Slabo 27px", serif = Slabo
+			"Lora", serif = Lora			
+			"Droid Sans", Sans-serif = Droid Sans
+			"Montserrat", Sans-serif = Montserrat
+	font
+		name = font_rest
+		description = Texto en el resto del sitio
+		values
+			"Oswald", Sans-serif = Oswald
+			"Inter", Sans-serif = Inter
+			"Poppins", Sans-serif = Poppins
+			"Roboto", Sans-serif = Roboto
+			"Muli", sans-serif = Muli
+			"Lato", Helvetica, Arial, sans-serif = Lato
+			"Libre Baskerville", serif = Libre Baskerville
+			"Open Sans",sans-serif = Open Sans
+			"Slabo 27px", serif = Slabo
+			"Lora", serif = Lora			
+			"Droid Sans", Sans-serif = Droid Sans
+			"Montserrat", Sans-serif = Montserrat
+			"Poppins", Sans-serif = Poppins
+			"Onest", Sans-serif = Onest
+
+Encabezado
+	meta
+		icon = arrow-up
+		advanced = true
+	collapse
+		title = Configuraciones generales
+	color
+		name = color_header
+		description = Color del Header
+	color
+		name = color_text_header
+		description = Color del texto / iconos del Header
+	color
+		name = color_text_hover_header
+		description = Hover del texto / iconos del Header
+	checkbox
+		name = head_fix
+		description = Encabezado siempre visible al navegar la tienda
+	checkbox
+		name = languages_header
+		description = Mostrar idiomas y monedas en el encabezado
+	subtitle
+		subtitle = Menu superior
+	checkbox
+		name = show_nav_superior
+		description = Mostrar menu de navegacion superior
+	menu
+		name = header_menu_superior
+		description = menu que nutre al encabezado Superior
+	checkbox
+		name = input_search_open
+		description = Barra de busqueda / Icono de busqueda
+	dropdown
+		name = header_position
+		description = Pocision Logo
+		values
+			left = Logo Izquierda
+			center = Logo Centro
+	subtitle
+		subtitle = Menu Inferior
+	checkbox
+		name = show_nav_inferior
+		description = Mostrar menu de navegacion inferior
+	menu
+		name = header_menu_inferior
+		description = menu que nutre al encabezado Inferior
+	subtitle
+		subtitle = El logo del encabezado cambiara al hacer scroll en la pagina
+	image
+		original = head_logo_on_scroll.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 100
+		height = 100
+	collapse
+		title = Barra de anuncio
+	checkbox
+		name = ad_bar
+		description = Mostrar barra de anuncio
+	title
+		title = Anuncio 1
+	i18n_input
+		name = ad_01_text
+		description = Mensaje
+	i18n_input
+		name = ad_01_url
+		description = Link (opcional)
+	title
+		title = Anuncio 2
+	i18n_input
+		name = ad_02_text
+		description = Mensaje
+	i18n_input
+		name = ad_02_url
+		description = Link (opcional)
+	title
+		title = Anuncio 3
+	i18n_input
+		name = ad_03_text
+		description = Mensaje
+	i18n_input
+		name = ad_03_url
+		description = Link (opcional)
+	collapse
+		title = Imagen de Categorias
+	subtitle
+		subtitle = Imagenes para las subcategorias en computadora
+	description
+		description = IMPORTANTE: los nombres asignados a cada imagen deben estar compuestos por [nombre de la categoria padre] > [nombre del item del menu], de esta forma se puede relacionar la imagen con la subcategoria. (ej: "ANTEOJOS > SIN GÉNERO" referencia esa imagen a la subcategoria SIN GÉNERO de ANTEOJOS)
+	gallery
+		name = header_subcategory_images
+		gallery_image = Agregar imagen
+		gallery_width = 200
+		gallery_height = 200
+		gallery_more_info = true
+
+Página de inicio
+	meta
+		icon = home
+		advanced = true
+		default = home_order_position
+	collapse
+		title = Carrusel de imágenes
+		backto = home_order_position
+	subtitle
+		subtitle = Imágenes para computadoras
+	gallery
+		name = slider
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 1920
+		gallery_height = 800
+		gallery_more_info = true
+	subtitle
+		subtitle = Imágenes para celulares
+	description
+		description = Mejorá la calidad y velocidad de carga con esta opción
+	checkbox
+		name = toggle_slider_mobile
+		description = Cargar otras imágenes para celulares
+	gallery
+		name = slider_mobile
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 500
+		gallery_height = 267
+		gallery_more_info = true
+	subtitle
+		subtitle = <a target='_blank' data-toggle-info='show-on_slider_mobile-inactive' href='https://ayuda.tiendanube.com/es/articles/3297783-como-usar-el-carrusel-de-imagenes-para-las-plantillas-idea-bahia-y-amazonas'>¿Cómo diseñar las imágenes para tu carrusel?</a>
+	collapse
+		title = Banner Hero
+		backto = home_order_position
+	title
+		title = Banner Hero
+	image
+		original = hero_banner_image_desktop.jpg
+		title = Cargar imagen Desktop(JPG, GIF, PNG)
+		width = 1920
+		height = 870
+	image
+		original = hero_banner_image_mobile.jpg
+		title = Cargar imagen Mobile(JPG, GIF, PNG)
+		width = 828
+		height = 375
+	i18n_input
+		name = banner_hero_title
+		description = Título en el banner
+	i18n_input
+		name = banner_hero_primer_parrafo
+		description = Primer Parrafo en el banner
+	i18n_input
+		name = banner_hero_segundo_parrafo
+		description = Segundo Parrafo en el banner
+	i18n_input
+		name = banner_hero_primer_boton_text
+		description = Texto del primer botón
+	i18n_input
+		name = banner_hero_primer_boton_url
+		description = URL del primer botón
+	i18n_input
+		name = banner_hero_segundo_boton_text
+		description = Texto del segundo botón
+	i18n_input
+		name = banner_hero_segundo_boton_url
+		description = URL del segundo botón
+	collapse
+		title = Información de envíos, pagos y compra
+		backto = home_order_position
+	checkbox
+		name = banner_services
+		description = Mostrar los banners en la página principal
+	subtitle
+		subtitle = BANNER 1
+	dropdown
+		name = banner_services_01_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			branches = Local
+			quality = Calidad premium
+			world = Mundo
+	i18n_input
+		name = banner_services_01_title
+		description = Título
+	i18n_input
+		name = banner_services_01_description
+		description = Descripción
+	i18n_input
+		name = banner_services_01_url
+		description = Link
+	subtitle
+		subtitle = BANNER 2
+	dropdown
+		name = banner_services_02_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			branches = Local
+			quality = Calidad premium
+			world = Mundo
+	i18n_input
+		name = banner_services_02_title
+		description = Título
+	i18n_input
+		name = banner_services_02_description
+		description = Descripción
+	i18n_input
+		name = banner_services_02_url
+		description = Link
+	subtitle
+		subtitle = BANNER 3
+	dropdown
+		name = banner_services_03_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			branches = Local
+			quality = Calidad premium
+			world = Mundo
+	i18n_input
+		name = banner_services_03_title
+		description = Título
+	i18n_input
+		name = banner_services_03_description
+		description = Descripción
+	i18n_input
+		name = banner_services_03_url
+		description = Link
+	subtitle
+		subtitle = BANNER 4
+	dropdown
+		name = banner_services_04_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			branches = Local
+			quality = Calidad premium
+			world = Mundo
+	i18n_input
+		name = banner_services_04_title
+		description = Título
+	i18n_input
+		name = banner_services_04_description
+		description = Descripción
+	i18n_input
+		name = banner_services_04_url
+		description = Link
+
+	collapse
+		title = Textos Ramificadores
+		backto = home_order_position
+	i18n_input
+		name = text1_title
+		description = Título
+	i18n_input
+		name = text1_url
+		description = URL
+	image
+		original = img_1_ramifi_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text2_title
+		description = Título
+	i18n_input
+		name = text2_url
+		description = URL
+	image
+		original = img_2_ramifi_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text3_title
+		description = Título
+	i18n_input
+		name = text3_url
+		description = URL
+	image
+		original = img_3_ramifi_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text4_title
+		description = Título
+	i18n_input
+		name = text4_url
+		description = URL
+	image
+		original = img_4_ramifi_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text5_title
+		description = Título
+	i18n_input
+		name = text5_url
+		description = URL
+	image
+		original = img_5_ramifi_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text6_title
+		description = Título
+	i18n_input
+		name = text6_url
+		description = URL
+	image
+		original = img_6_ramifi_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+
+	collapse
+		title = Formulario Corizador
+		backto = home_order_position
+	i18n_input
+		name = titulo_cotizador_title
+		description = Título Seccion
+	i18n_input
+		name = subtitulo_cotizador_title
+		description = SubTítulo Seccion
+	
+	collapse
+		title = Pilares de la marca
+		backto = home_order_position
+	i18n_input
+		name = titulo_pilar_title
+		description = Título Seccion
+	i18n_input
+		name = subtitulo_pilar_title
+		description = SubTítulo Seccion
+	i18n_input
+		name = text_pilar_description
+		description = Parrafo texto Seccion
+	i18n_input
+		name = text1_pilar_title
+		description = Título
+	i18n_input
+		name = text1_pilar_description
+		description = Descripcion
+	image
+		original = img_1_pilar_mobile.png
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text2_pilar_title
+		description = Título
+	i18n_input
+		name = text2_pilar_description
+		description = Descripcion
+	image
+		original = img_2_pilar_mobile.png
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text3_pilar_title
+		description = Título
+	i18n_input
+		name = text3_pilar_description
+		description = Descripcion
+	image
+		original = img_3_pilar_mobile.png
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text4_pilar_title
+		description = Título
+	i18n_input
+		name = text4_pilar_description
+		description = Descripcion
+	image
+		original = img_4_pilar_mobile.png
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text5_pilar_title
+		description = Título
+	i18n_input
+		name = text5_pilar_description
+		description = Descripcion
+	image
+		original = img_5_pilar_mobile.png
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	i18n_input
+		name = text6_pilar_title
+		description = Título
+	i18n_input
+		name = text6_pilar_description
+		description = Descripcion
+	image
+		original = img_6_pilar_mobile.png
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	collapse
+		title = Mensaje institucional
+		backto = home_order_position
+	i18n_input
+		name = welcome_message
+		description = Título
+	i18n_input
+		name = welcome_text
+		description = Descripción
+	collapse
+		title = Banners de categorías
+		backto = home_order_position
+	i18n_input
+		description = Titulo del listado.
+		name = categories_title
+	i18n_input
+		description = SubTitulo del listado.
+		name = categories_subtitle
+	gallery
+		name = slider_categories
+		gallery_image = Agregar imagen de categoria
+		gallery_width = 250
+		gallery_more_info = true
+	collapse
+		title = Banners de Landings
+		backto = home_order_position
+	checkbox
+		name = mostrar_titulo_landing
+		description = Mostrar el titulo 
+	i18n_input
+		description = Titulo del listado.
+		name = landing_title
+	checkbox
+		name = mostrar_texto_landing
+		description = Mostrar el texto
+	i18n_input
+		description = texto del listado.
+		name = landing_texto
+	subtitle
+		subtitle = Imágenes para desktop
+	gallery
+		name = slider_landing
+		gallery_image = Agregar imagen de landing
+		gallery_width = 420
+		gallery_more_info = true	
+	subtitle
+		subtitle = Imágenes para mobile
+	gallery
+		name = slider_landing_mobile
+		gallery_image = Agregar imagen de landing
+		gallery_width = 500
+		gallery_more_info = true	
+	collapse
+		title = Marcas
+		backto = home_order_position
+	checkbox
+		name = titulo_en_marcas
+		description = Mostrar El titulo y texto en marcas
+	i18n_input
+		description = Titulo del listado de marcas.
+		name = brand_title
+	i18n_input
+		description = Texteo del listado de marcas.
+		name = brand_text
+	subtitle
+		subtitle = Imágenes para marcas
+	gallery
+		name = category_brands_images
+		gallery_image = Agregar imagen
+		gallery_width = 250
+		gallery_more_info = true
+	collapse
+		title = Productos destacados
+		backto = home_order_position
+	title
+		title = Banner destacados
+	image
+		original = featured_product_image.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	checkbox
+		name = featured_banner_enabled
+		description = Activar la imagen del banner ( Si no se carga imagen dejarlo desactivado )
+	i18n_input
+		name = featured_product_title
+		description = Título
+	i18n_input
+		name = featured_product_url
+		description = URL a Listado de productos
+	checkbox
+		name = featured_product_title_mobile
+		description = Marcar si se quiere dar visibilidad el titulo en mobile
+	checkbox
+		name = featured_product_title_desktop
+		description = Marcar si se quiere dar visibilidad el titulo en desktop
+	checkbox
+		name = featured_product_banner_end
+		description = Marcar si se quiere el banner despues de los productos. ( Por defecto se muestra antes )
+	title
+		title = Disposición en celulares
+	dropdown
+		name = featured_product_mobile
+		description = Cantidad de productos por fila
+		values
+			1 = 1 producto
+			2 = 2 productos
+	title
+		title = Disposición en computadoras
+	dropdown
+		name = featured_product_desktop
+		description = Cantidad de productos por fila
+		values
+			2 = 2 productos
+			3 = 3 productos
+			4 = 4 productos
+			5 = 5 productos
+			6 = 6 productos
+	subtitle
+		subtitle = <a target='_blank' href='/admin/themes/settings/product_order/'>Elegí cuáles vas a destacar</a>
+	collapse
+		title = Productos nuevos
+		backto = home_order_position
+	title
+		title = Banner nuevos
+	image
+		original = new_product_image.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	checkbox
+		name = new_banner_enabled
+		description = Activar la imagen del banner ( Si no se carga imagen dejarlo desactivado )
+	i18n_input
+		name = new_product_title
+		description = Título
+	i18n_input
+		name = new_product_url
+		description = URL a Listado de productos
+	checkbox
+		name = new_product_title_mobile
+		description = Marcar si se quiere dar visibilidad el titulo en mobile
+	checkbox
+		name = new_product_title_desktop
+		description = Marcar si se quiere dar visibilidad el titulo en desktop
+	checkbox
+		name = new_product_banner_end
+		description = Marcar si se quiere el banner despues de los productos. ( Por defecto se muestra antes )
+	title
+		title = Disposición en celulares
+	dropdown
+		name = new_product_mobile
+		description = Cantidad de productos por fila
+		values
+			1 = 1 producto
+			2 = 2 productos
+	title
+		title = Disposición en computadoras
+	dropdown
+		name = new_product_desktop
+		description = Cantidad de productos por fila
+		values
+			2 = 2 productos
+			3 = 3 productos
+			4 = 4 productos
+			5 = 5 productos
+			6 = 6 productos
+	subtitle
+		subtitle = <a target='_blank' href='/admin/themes/settings/product_order/'>Elegí cuáles vas a destacar</a>
+	collapse
+		title = Productos en oferta
+		backto = home_order_position
+	title
+		title = Banner sale
+	image
+		original = sale_product_image.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	checkbox
+		name = sale_banner_enabled
+		description = Activar la imagen del banner ( Si no se carga imagen dejarlo desactivado )
+	i18n_input
+		name = sale_product_title
+		description = Título
+	i18n_input
+		name = sale_product_url
+		description = URL a Listado de productos
+	checkbox
+		name = sale_product_title_mobile
+		description = Marcar si se quiere dar visibilidad el titulo en mobile
+	checkbox
+		name = sale_product_title_desktop
+		description = Marcar si se quiere dar visibilidad el titulo en desktop
+	checkbox
+		name = sale_product_banner_end
+		description = Marcar si se quiere el banner despues de los productos. ( Por defecto se muestra antes )
+	title
+		title = Disposición en celulares
+	dropdown
+		name = sale_product_mobile
+		description = Cantidad de productos por fila
+		values
+			1 = 1 producto
+			2 = 2 productos
+	title
+		title = Disposición en computadoras
+	dropdown
+		name = sale_product_desktop
+		description = Cantidad de productos por fila
+		values
+			2 = 2 productos
+			3 = 3 productos
+			4 = 4 productos
+			5 = 5 productos
+			6 = 6 productos
+	subtitle
+		subtitle = <a target='_blank' href='/admin/themes/settings/product_order/'>Elegí cuáles vas a destacar</a>
+	collapse
+		title = Productos mas vendidos
+		backto = home_order_position
+	title
+		title = Banner Best Selling
+	image
+		original = best_selling_product_image.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 350
+		height = 556
+	checkbox
+		name = best_selling_banner_enabled
+		description = Activar la imagen del banner ( Si no se carga imagen dejarlo desactivado )
+	i18n_input
+		description = Titulo del listado.
+		name = best_selling_product_title
+	checkbox
+		name = best_selling_product_title_mobile
+		description = Marcar si se quiere dar visibilidad el titulo en mobile
+	checkbox
+		name = best_selling_product_title_desktop
+		description = Marcar si se quiere dar visibilidad el titulo en desktop
+	checkbox
+		name = best_selling_product_banner_end
+		description = Marcar si se quiere el banner despues de los productos. ( Por defecto se muestra antes )
+	title
+		title = Disposición en celulares
+	dropdown
+		name = bestSelling_product_mobile
+		description = Cantidad de productos por fila
+		values
+			1 = 1 producto
+			2 = 2 productos
+	title
+		title = Disposición en computadoras
+	dropdown
+		name = bestSelling_product_desktop
+		description = Cantidad de productos por fila
+		values
+			2 = 2 productos
+			3 = 3 productos
+			4 = 4 productos
+			5 = 5 productos
+			6 = 6 productos
+	subtitle
+		subtitle = <a target='_blank' href='/admin/themes/settings/product_order/'>Elegí cuáles vas a destacar</a>
+	collapse
+		title = Banner ancho de pagina 1
+		backto = home_order_position
+	subtitle
+		subtitle = imagen principal
+	image
+		original = module_01.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1920
+		height = 790
+	subtitle
+		subtitle = imagen de hover
+	image
+		original = module_hover_01.jpg
+		title = Cargar imagen de hover (JPG, GIF, PNG)
+		width = 1920
+		height = 790
+	i18n_input
+		name = module_01_url
+		description = Link
+	title
+		title = Cargar otras imágenes para celulares
+	image
+		original = module_01_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 500
+		height = 360
+	subtitle
+		subtitle = imagen de hover
+	image
+		original = module_hover_01_mobile.jpg
+		title = Cargar imagen de hover (JPG, GIF, PNG)
+		width = 500
+		height = 360
+	i18n_input
+		show_by = 
+		name = module_01_url_mobile
+		description = Link
+	collapse
+		title = Banner ancho de pagina 2
+		backto = home_order_position
+	subtitle
+		subtitle = imagen principal
+	image
+		original = module_02.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1920
+		height = 790
+	subtitle
+		subtitle = imagen de hover
+	image
+		original = module_hover_02.jpg
+		title = Cargar imagen de hover (JPG, GIF, PNG)
+		width = 1920
+		height = 790
+	i18n_input
+		name = module_02_url
+		description = Link
+	title
+		title = Cargar otras imágenes para celulares
+	image
+		original = module_02_mobile.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 500
+		height = 360
+	subtitle
+		subtitle = imagen de hover
+	image
+		original = module_hover_02_mobile.jpg
+		title = Cargar imagen de hover (JPG, GIF, PNG)
+		width = 500
+		height = 360
+	i18n_input
+		name = module_02_url_mobile
+		description = Link
+	collapse
+		title = Publicaciones de Instagram
+		backto = home_order_position
+	description
+		description = El Feed de Instagram muestra automáticamente tus últimas publicaciones en la página de inicio de tu tienda. Tu perfil debe ser público.
+	checkbox
+		name = show_instafeed
+		description = Mostrar tus publicaciones de Instagram en la página de inicio de tu tienda
+	subtitle
+		subtitle = Para mostrar tus publicaciones necesitás generar un token, <a target='_blank' href='https://ayuda.tiendanube.com/es_ES/como-mostrar-mis-publicaciones-de-instagram-en-mi-tienda'>¿cómo configurarlo?</a>
+	collapse
+		title = Video
+		backto = home_order_position
+	checkbox
+		name = video_full
+		description = Utilizar el 100% del ancho de la pantalla para mostrar el video
+	dropdown
+		name = video_type
+		description = Tipo de reproducción
+		values
+			autoplay = Automática y sin sonido
+			sound = Con sonido y sin reproducción automática
+	i18n_input
+		name = video_embed
+		description = Link de YouTube
+	description
+		description = Ej: https://www.youtube.com/watch?v=Yn19Od1H0S4
+	subtitle
+		subtitle = Imagen del video
+	description
+		description = No aplica si el tipo de reproducción es automática y el video no está en la primera posición
+	image
+		original = video_image.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1280
+		height = 720
+	i18n_input
+		name = video_title
+		description = Título
+	i18n_input
+		name = video_subtitle
+		description = Subtítulo
+	i18n_input
+		name = video_text
+		description = Descripción
+	i18n_input
+		name = video_button
+		description = Texto del botón
+	i18n_input
+		name = video_button_url
+		description = Link del botón
+	checkbox
+		name = video_vertical_mobile
+		description = Usar formato vertical en celulares
+	collapse
+		title = Pop-up promocional
+		backto = home_order_position
+	checkbox
+		name = home_promotional_popup
+		description = Mostrar pop-up
+	subtitle
+		subtitle = Imagen para el pop-up
+	image
+		original = home_popup_image.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+	subtitle
+		subtitle = Frase motivadora para el pop-up
+	i18n_input
+		name = home_popup_txt
+	i18n_input
+		name = home_popup_url
+		description = Link (Opcional)
+	subtitle
+		subtitle = Newsletter
+	checkbox
+		name = home_news_box
+		description = Permitir que tus clientes se registren para recibir novedades desde el pop-up (Opcional)
+	collapse
+		title = Banner ramificador
+		backto = home_order_position
+	subtitle
+		subtitle = Banner 1
+	i18n_input
+		description = Titulo del listado.
+		name = banner_ramificador_title
+	i18n_input
+		description = SubTitulo del listado.
+		name = banner_ramificador_subtitle
+	image
+		name = banner_navigation_01
+		original = banner_navigation_01.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 480
+		height = 480
+		url = banner_navigation_01_url
+		url_description = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+	subtitle
+		subtitle = Banner 2
+	image
+		name = banner_navigation_02
+		original = banner_navigation_02.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 480
+		height = 480
+		url = banner_navigation_02_url
+		url_description = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+	subtitle
+		subtitle = Banner 3
+	image
+		name = banner_navigation_03
+		original = banner_navigation_03.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 480
+		height = 480
+		url = banner_navigation_03_url
+		url_description = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+	collapse
+		title = Página de inicio
+		backto = _top
+	section_order
+		name = home_order_position
+		start_index = 0
+		sections
+			slider = Carrusel de imágenes
+			welcome = Mensaje institucional
+			featured = Productos destacados
+			ramificadores = Textos Ramificadores
+			new = Productos nuevos
+			sale = Productos en oferta
+			best_seller = Productos mas vendidos
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de categorías
+			landing = Banners de Landings
+			banner_navigation = Banner ramificador
+			video = Video
+			brands = Marcas
+			instafeed = Publicaciones de Instagram
+			module_1 = Banner ancho de pagina 1 
+			module_2 = Banner ancho de pagina 2
+			banner_hero = Banner Hero
+			pilares = Pilares de la marca
+			cotizador = Formulario Corizador
+	link
+		text = Pop-up promocional
+		linkto = home_promotional_popup
+
+Listado de productos
+	meta
+		icon = list-ul
+		advanced = true
+	title
+		title = Imagen para las categorías
+	image
+		title = Cargar imagen (JPG, GIF, PNG)
+		original = banner-product.jpg
+		width = 1580
+		height = 220
+	subtitle
+		subtitle = Podés subir una imagen diferente para cada categoría <a target='_blank' href='/admin/categories/'>desde acá</a>
+	title
+		title = Filtros
+	subtitle
+		subtitle = <span class='js-description-html'><strong>Configurá los filtros</strong> de tu tienda desde <a target='_blank' href='/admin/v2/filters' class='font-bold'>el administrador</a></span>
+	title
+		title = Productos en el listado
+	dropdown
+		name = grid_columns
+		description = Cantidad de productos por fila
+		values
+			1 = 1 en celular y 3 en computadora
+			2 = 2 en celular y 4 en computadora
+	checkbox
+		name = mostrar_precio
+		description = Mostrar Precio
+	title
+		title = Variantes de color
+	checkbox
+		name = product_color_variants
+		description = Mostrar variantes de color en listado de productos
+	title
+		title = Cuotas
+	checkbox
+		name = cuotas_sin_interes
+		description = Mostrar Mensaje de x cuotas sin interes
+	dropdown
+		name = cuotas_sin_interes_values
+		description = Cantidad de cuotas
+		values
+			1 = 1 
+			2 = 2 
+			3 = 3
+			4 = 4
+			6 = 6
+			9 = 9
+			12 = 12
+	title
+		title = Cuotas personalizado
+	checkbox
+		name = cuotas_sin_interes_desde
+		description = Mostrar Mensaje de cuotas personalizado
+	i18n_input
+		description = Mensaje personalizado de cuotas
+		name = cuotas_personalizado
+	title
+		title = Compra rápida
+	checkbox
+		name = quick_shop
+		description = Permitir que tus clientes puedan agregar productos a su carrito rápidamente desde el listado de productos
+	collapse
+		title = Banners de subcategorias
+	description
+		description = Para relacionar correctamente los banners con sus respectivas subcategorias, las imagenes deben tener su titulo en el formato [nombre categoria padre] > [nombre subcategoria]. de lo contrario no se relacionaran correctamente
+	gallery
+		name = plp_subcategory_images
+		gallery_image = Agregar imagen
+		gallery_width = 200
+		gallery_height = 200
+		gallery_more_info = true
+	collapse
+		title = Cucardas
+	gallery
+		name = cucardas
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 930
+		gallery_height = 465
+		gallery_more_info = true
+	title
+
+Detalle de producto
+	meta
+		icon = cube
+		advanced = true
+	title
+		title = Descuento por medio de pago
+	checkbox
+		name = payment_discount_price
+		description = Mostrar el precio con mayor descuento en los listados, el detalle de producto y el carrito de compras
+	subtitle
+		subtitle = <a target='_blank' href='/admin/payments/'>Configurá descuentos para tus medios de pago.</a>
+	checkbox
+		name = mostrar_cuotas_default
+		description = Mostrar cuotas por defecto de TN
+	checkbox
+		name = mostrar_boton_contacto
+		description = Mostrar Boton de contacto (Kommo)
+	title
+		title = Cuotas personalizado producto
+	i18n_input
+		description = Mostrar Mensaje de cuotas personalizado
+		name = cuotas_personalizado_product
+	title
+		title = Formas de entrega
+	checkbox_global
+		name = shipping_calculator_product_page
+		description = Mostrar el calculador de costos de envío y locales físicos en la página de producto
+	subtitle
+		subtitle = <a target='_blank' href='/admin/shipping/'>Agregar medios de envío o locales físicos</a>
+	title
+		title = Variantes del producto
+	checkbox
+		name = bullet_variants
+		description = Mostrar como botones
+	title
+		title = Último producto en stock
+	checkbox
+		name = last_product
+		description = Mostrar un mensaje para incentivar la compra cuando quede la última unidad de un producto
+	i18n_input
+		description = Mensaje
+		name = last_product_text
+	title
+		title = Facebook
+	subtitle
+		subtitle = Comentarios en el producto
+	checkbox
+		name = show_product_fb_comment_box
+		description = Permitir que tus clientes te dejen comentarios con su usuario de Facebook en la página de producto
+	text
+		name = fb_admins
+		description = ID de tu perfil de Facebook
+	subtitle
+		subtitle = Es necesario si querés moderar los comentarios. Podés obtenerlo <a target='_blank' href='https://findmyfbid.in/'>acá</a>
+	title
+		title = Productos relacionados
+	i18n_input
+		description = Título para los productos alternativos
+		name = product_related_title
+	i18n_input
+		description = Título para los productos complementarios
+		name = product_complementary_title
+	title
+		title = Mensaje para Alianzas / Joyas
+	textarea
+		name = product_rings_message
+		description = html del mensaje que se va a mostrar para los productos de alianzas y joyas
+	collapse
+		title = Guía de talles
+	subtitle
+		subtitle = Guia de Talles Remeras
+	image
+		title = Guia de Talles Remeras
+		original = size_guide_shirts.png
+		width = 1280
+		height = 753
+		url = seal_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen del sello al hacer clic
+	subtitle
+		subtitle = Guia de Talles Ojotas
+	image
+		title = Guia de Talles Ojotas
+		original = size_guide_slippers.png
+		width = 1280
+		height = 753
+		url = seal_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen del sello al hacer clic
+	subtitle
+		subtitle = Guia de Talles Niños
+	image
+		title = Guia de Talles Niños
+		original = size_guide_children.png
+		width = 1280
+		height = 753
+		url = seal_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen del sello al hacer clic
+	dropdown
+		name = size_guide_type
+		description = Tipo de reproducción
+		values
+			autoplay = Automática y sin sonido
+			sound = Con sonido y sin reproducción automática
+			
+Carrito de compras
+	meta
+		icon = shopping-cart
+		advanced = true
+	checkbox
+		name = continue_buying
+		description = Mostrar el botón 'Ver más productos' en el carrito de compras
+	title
+		title = Carrito de compras rápidas
+	checkbox
+		name = ajax_cart
+		description = Permitir que tus clientes agreguen productos al carrito sin necesidad de ir a otra página
+	title
+		title = Recomendaciones de productos
+	checkbox
+		name = add_to_cart_recommendations
+		description = Sugerir productos complementarios al agregar uno al carrito de compras rápidas
+	subtitle
+		subtitle = <a target='_blank' href='https://ayuda.tiendanube.com/es_AR/123159-detalle-del-producto/como-seleccionar-los-productos-relacionados-en-tiendanube' class='js-checkbox-help-link'>Más sobre productos relacionados</a>
+	title
+		title = Monto mínimo de compra
+	text
+		name = cart_minimum_value
+		description = ¿Cuál es el monto mínimo que tus clientes deben gastar?
+		placeholder = Ej.: 3000
+	subtitle
+		subtitle = <span class='legend'>Ingresá solamente números</span>
+	title
+		title = Formas de entrega
+	checkbox_global
+		name = shipping_calculator_cart_page
+		description = Mostrar el calculador de costos de envío y locales físicos en el carrito
+	subtitle
+		subtitle = <a target='_blank' href='/admin/shipping/'>Agregar medios de envío o locales físicos</a>
+
+Landings
+	meta
+		icon = file
+		advanced = true
+	collapse
+		title = Tasaciones
+	subtitle
+		subtitle = Imagen Banner principal
+	image
+		title = Banner Principal
+		original = tasaciones_principal.png
+		width = 1920
+		height = 701
+		url = tasaciones_principal_url
+	subtitle
+		subtitle = Imagen Banner Nosotros
+	image
+		title = Banner Nosotros
+		original = tasaciones_nosotros.png
+		width = 1920
+		height = 938
+	subtitle
+		subtitle = Imagen Banner Cotizaciones
+	image
+		title = Banner Cotizaciones
+		original = tasaciones_cotizaciones.png
+		width = 1920
+		height = 938
+	subtitle
+		subtitle = Imagen Banner Profesionales
+	image
+		title = Banner Profesionales
+		original = tasaciones_profesionales.png
+		width = 1920
+		height = 546
+	subtitle
+		subtitle = Imagen Banner Marcas
+	image
+		title = Banner Marcas
+		original = tasaciones_marcas.png
+		width = 1920
+		height = 574
+
+	collapse
+		title = Inversiones
+	subtitle
+		subtitle = Imagen Banner principal
+	image
+		title = Banner Principal
+		original = inversiones_principal.png
+		width = 1920
+		height = 701
+	subtitle
+		subtitle = Imagen Banner Caracteristicas
+	image
+		title = Banner Caracteristicas
+		original = inversiones_caracteristicas.png
+		width = 1920
+		height = 938
+	subtitle
+		subtitle = Imagen Banner Lingotes
+	image
+		title = Banner Lingotes
+		original = inversiones_lingotes.png
+		width = 1920
+		height = 382
+	subtitle
+		subtitle = Imagen Banner Evolucion
+	image
+		title = Banner Evolucion
+		original = inversiones_evolucion.png
+		width = 1920
+		height = 1061
+	subtitle
+		subtitle = Imagen Banner Por que
+	image
+		title = Banner Por que
+		original = inversiones_porque.png
+		width = 800
+		height = 1384
+	subtitle
+		subtitle = Imagen Banner Whatsapp
+	image
+		title = Banner Whatsapp
+		original = inversiones_whatsapp.png
+		width = 1920
+		height = 260
+
+	collapse
+		title = Mayoristas
+	subtitle
+		subtitle = Imagen Banner Principal
+	image
+		title = Banner Principal
+		original = mayoristas_principal.png
+		width = 1920
+		height = 574
+		url = mayoristas_principal_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen al hacer clic
+	subtitle
+		subtitle = Imagen Banner Clientes
+	image
+		title = Banner Clientes
+		original = mayoristas_clientes.png
+		width = 414
+		height = 409
+		url = mayoristas_clientes_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen al hacer clic
+	subtitle
+		subtitle = Imagen Banner Catalogo
+	image
+		title = Banner Catalogo
+		original = mayoristas_catalogo.png
+		width = 902
+		height = 435
+		url = mayoristas_catalogo_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen al hacer clic
+	subtitle
+		subtitle = Imagenes Banner Categorias
+	gallery
+		name = mayoristas_categories
+		gallery_image = Agregar imagen
+		gallery_width = 300
+		gallery_height = 630
+		gallery_more_info = true
+
+Pie de página
+	meta
+		icon = arrow-down
+		advanced = true
+	checkbox
+		name = footer_menus_toggle
+		description = Mostrar opciones del menú al tocar el título (solo en celulares)
+	collapse
+		title = Información de la tienda
+	checkbox
+		name = footer_info_show
+		description = Mostrar informacion de la tienda
+	i18n_input
+		name = footer_info_title
+		description = Titulo de la tienda
+	textarea
+		name = footer_info_text
+		description = Descripcion de la tienda
+	collapse
+		title = Menúes
+	subtitle
+		subtitle = Elegí los menúes para el final de la página (footer).
+	subtitle
+		subtitle = Si aún no configuraste ninguno, podés hacerlo <a target='_blank' href='/admin/navigation/?ref=submenu'>desde acá</a> </br> <a target='_blank' href='https://ayuda.tiendanube.com/es_AR/123259-menues/como-cambiar-el-menu-inferior-de-mi-tienda'>¿Cómo cambio el menú inferior de mi tienda?</a>
+	checkbox
+		name = footer_menu_primary_show
+		description = Mostrar menu principal
+	i18n_input
+		name = footer_menu_primary_title
+		description = Titulo del menu
+	menu
+		name = footer_menu_primary
+		description = Selecciona el primer menu
+	checkbox
+		name = footer_menu_secondary_show
+		description = Mostrar menu secundario
+	i18n_input
+		name = footer_menu_secondary_title
+		description = Titulo del menu
+	menu
+		name = footer_menu_secondary
+		description = Selecciona el segundo menu
+	collapse
+		title = Contacto
+	checkbox
+		name = footer_contact_show
+		description = Mostrar datos de contacto
+	i18n_input
+		name = footer_contact_title
+		description = Titulo del menu
+	i18n_input
+		name = footer_contact_branches_text
+		description = Texto de link de locales
+	i18n_input
+		name = footer_contact_branches_url
+		description = Url de link de locales
+	i18n_input
+		name = footer_contact_form_text
+		description = Texto de link de contacto
+	i18n_input
+		name = footer_contact_form_url
+		description = Url de link de contacto
+	collapse
+		title = Newsletter
+		backto = home_order_position
+	title
+		title = Suscripción al newsletter
+	checkbox
+		name = news_show
+		description = mostrar formulario de suscripcion al newsletter
+	i18n_input
+		name = news_title
+		description = Elegí el título para la sección 'Newsletter' en el footer
+	i18n_input
+		name = news_text
+		description = ¡Escribí algo para que tus clientes se suscriban a tu newsletter!
+	collapse
+		title = Otros elementos
+	title
+		title = Medios de envío
+	checkbox_global
+		name = shipping_show
+		description = Mostrar medios de envío en tu tienda
+	title
+		title = Medios de pago
+	checkbox_global
+		name = payments_show
+		description = Mostrar medios de pago en tu tienda
+	title
+		title = Sellos personalizados en el footer
+	description
+		description = Podés agregar sellos de dos formas: subiendo una imagen o pegando el código Javascript o HTML
+	image
+		title = Imagen del sello
+		original = seal_img.jpg
+		width = 24
+		height = 24
+		url = seal_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen del sello al hacer clic
+	subtitle
+		subtitle = Código Javascript o HTML del sello
+	textarea
+		name = custom_seal_code
+	collapse
+		title = Redes sociales
+		backto = home_order_position
+	i18n_input
+		name = linkedin_url
+		description = URL a perfil de linkedin
+	i18n_input
+		name = twitch_url
+		description = URL a perfil de twitch
+	collapse
+		title = Info Adicional
+		backto = home_order_position
+	i18n_input
+		name = footer_aditional_info_title_1
+		description = Titulo 1 adicional
+	i18n_input
+		name = footer_aditional_info_content_1
+		description = Contenido 1 adicional
+	i18n_input
+		name = footer_aditional_info_title_2
+		description = Titulo 2 adicional
+	i18n_input
+		name = footer_aditional_info_content_2
+		description = Contenido 2 adicional
+	i18n_input
+		name = footer_aditional_info_title_3
+		description = Titulo 3 adicional
+	i18n_input
+		name = footer_aditional_info_content_3
+		description = Contenido 3 adicional
+
+Boton de whatsapp personalizado
+	meta
+		icon = whatsapp
+		advanced = true	
+	checkbox
+		name = custom_whatsapp
+		description = Habilitar Whatsapp personalizado
+	subtitle
+		subtitle = numero 1
+	i18n_input
+		name = whatsapp_1_text
+		description = texto descriptivo del numero
+	i18n_input
+		name = whatsapp_1_number
+		description = numero de WhatsApp (ej: 5491101234567)
+	subtitle
+		subtitle = numero 2
+	i18n_input
+		name = whatsapp_2_text
+		description = texto descriptivo del numero
+	i18n_input
+		name = whatsapp_2_number
+		description = numero de WhatsApp (ej: 5491101234567)
+	subtitle
+		subtitle = numero 3
+	i18n_input
+		name = whatsapp_3_text
+		description = texto descriptivo del numero
+	i18n_input
+		name = whatsapp_3_number
+		description = numero de WhatsApp (ej: 5491101234567)
+
+
+Edición avanzada de CSS
+	meta
+		icon = code
+		advanced = true
+	title
+		title = Para diseñadores web
+	css_code
+		name = css_code
+		description = Acá podes escribir código CSS para que se muestre en tu tienda
+	subtitle
+		subtitle = <a target='_blank' href='https://ayuda.tiendanube.com/es_ES/123225-edicion-avanzada-de-css/como-editar-el-diseno-con-codigo-css'>¿Cómo edito el código CSS de mi tienda?</a>

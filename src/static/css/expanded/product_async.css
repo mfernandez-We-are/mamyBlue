@@ -1,0 +1,32 @@
+/*============================================================================
+  #Product detail
+==============================================================================*/
+/* // Image */
+.user-content img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* //  Form and info */
+.social-share-button {
+  display: inline-block;
+  padding: 8px;
+  font-size: 22px;
+}
+.social-share-button:hover, .social-share-button:focus {
+  opacity: 0.8;
+}
+
+.label-top-left {
+  top: 25px;
+  left: 25px;
+  z-index: 2;
+}
+
+.product-image-limited {
+  max-height: 320px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=product_async.css.map */
